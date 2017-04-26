@@ -22,7 +22,7 @@ class Dealership
   define_method(:add_vehicle) do |vehicle|
     @cars.push(vehicle)
   end
-  
+
   define_singleton_method(:all) do
     @@dealerships
   end
@@ -44,6 +44,4 @@ class Dealership
     end
     found_dealership
   end
-
-
 end
