@@ -14,4 +14,7 @@ class Dealership
   define_method(:id) do
     @id
   end
+  define_method(:cars) do
+    @cars
+  end
 end

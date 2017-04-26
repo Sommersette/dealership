@@ -15,4 +15,12 @@ describe(Dealership) do
       expect(test_dealership.id()).to(eq(1))
     end
   end
+  describe('#cars') do
+    it('initially returns an empty array of cars for the dealership') do
+      test_dealership = Dealership.new("Tiny Trevor's Used Cars") do
+      expect(test_dealership.cars()).to(eq([]))
+      end
+    end
+    
+  end
 end
